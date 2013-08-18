@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'jquery-fileupload-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'factory_girl_rails'
 
 group :doc do
   gem 'sdoc', require: false

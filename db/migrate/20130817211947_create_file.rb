@@ -1,6 +1,6 @@
 class CreateFile < ActiveRecord::Migration
   def change
-    create_table :files do |t|
+    create_table :user_files do |t|
       t.string :name
 
       t.timestamps
