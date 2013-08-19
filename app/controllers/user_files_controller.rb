@@ -8,8 +8,11 @@ class UserFilesController < ApplicationController
   end
 
   def create
-    redirect_to user_files_path
     @user_file = UserFile.create user_file_params
+    respond_to do |format|
+      format.html { redirect_to user_files_path }
+      format.js
+    end
   end
 
   private
