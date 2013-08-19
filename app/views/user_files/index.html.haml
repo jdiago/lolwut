@@ -1,0 +1,6 @@
+= link_to 'new', new_user_file_path
+#user_files
+  = render @user_files
+= form_for UserFile.new, remote: true do |f|
+  = f.label :file
+  = f.file_field :thing
