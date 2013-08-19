@@ -1,0 +1,5 @@
+<% if @user_file.new_record? %>
+  alert("fail");
+<% else %>
+  $("#user_files").append("<%= j render @user_file %>");
+<% end %>
