@@ -1,15 +1,15 @@
 class UserFilesController < ApplicationController
   def index
-    @files = UserFile.all
+    @user_files = UserFile.all
   end
 
   def new
-    @file = UserFile.new
+    @user_file = UserFile.new
   end
 
   def create
-    @file = UserFile.create user_file_params
     redirect_to user_files_path
+    @user_file = UserFile.create user_file_params
   end
 
   private
